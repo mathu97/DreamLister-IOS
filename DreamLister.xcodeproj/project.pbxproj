@@ -13,6 +13,14 @@
 		23D5A39F1F3A088000F1B9E9 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A39D1F3A088000F1B9E9 /* DreamLister.xcdatamodeld */; };
 		23D5A3A11F3A088000F1B9E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D5A3A01F3A088000F1B9E9 /* Assets.xcassets */; };
 		23D5A3A41F3A088000F1B9E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D5A3A21F3A088000F1B9E9 /* LaunchScreen.storyboard */; };
+		23D5A3B31F3A11E400F1B9E9 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3AB1F3A11E400F1B9E9 /* Store+CoreDataClass.swift */; };
+		23D5A3B41F3A11E400F1B9E9 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3AC1F3A11E400F1B9E9 /* Store+CoreDataProperties.swift */; };
+		23D5A3B51F3A11E400F1B9E9 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3AD1F3A11E400F1B9E9 /* ItemType+CoreDataClass.swift */; };
+		23D5A3B61F3A11E400F1B9E9 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3AE1F3A11E400F1B9E9 /* ItemType+CoreDataProperties.swift */; };
+		23D5A3B71F3A11E400F1B9E9 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3AF1F3A11E400F1B9E9 /* Image+CoreDataClass.swift */; };
+		23D5A3B81F3A11E400F1B9E9 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3B01F3A11E400F1B9E9 /* Image+CoreDataProperties.swift */; };
+		23D5A3B91F3A11E400F1B9E9 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3B11F3A11E400F1B9E9 /* Item+CoreDataClass.swift */; };
+		23D5A3BA1F3A11E400F1B9E9 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3B21F3A11E400F1B9E9 /* Item+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		23D5A3A01F3A088000F1B9E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23D5A3A31F3A088000F1B9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D5A3A51F3A088000F1B9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23D5A3AB1F3A11E400F1B9E9 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23D5A3AC1F3A11E400F1B9E9 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23D5A3AD1F3A11E400F1B9E9 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23D5A3AE1F3A11E400F1B9E9 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23D5A3AF1F3A11E400F1B9E9 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23D5A3B01F3A11E400F1B9E9 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		23D5A3B11F3A11E400F1B9E9 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		23D5A3B21F3A11E400F1B9E9 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		23D5A3951F3A088000F1B9E9 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				23D5A3BB1F3A11F600F1B9E9 /* Model */,
 				23D5A3961F3A088000F1B9E9 /* AppDelegate.swift */,
 				23D5A3981F3A088000F1B9E9 /* ViewController.swift */,
 				23D5A39A1F3A088000F1B9E9 /* Main.storyboard */,
@@ -65,6 +82,29 @@
 				23D5A39D1F3A088000F1B9E9 /* DreamLister.xcdatamodeld */,
 			);
 			path = DreamLister;
+			sourceTree = "<group>";
+		};
+		23D5A3BB1F3A11F600F1B9E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23D5A3AB1F3A11E400F1B9E9 /* Store+CoreDataClass.swift */,
+				23D5A3AD1F3A11E400F1B9E9 /* ItemType+CoreDataClass.swift */,
+				23D5A3AF1F3A11E400F1B9E9 /* Image+CoreDataClass.swift */,
+				23D5A3B11F3A11E400F1B9E9 /* Item+CoreDataClass.swift */,
+				23D5A3BC1F3A120500F1B9E9 /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		23D5A3BC1F3A120500F1B9E9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				23D5A3AC1F3A11E400F1B9E9 /* Store+CoreDataProperties.swift */,
+				23D5A3AE1F3A11E400F1B9E9 /* ItemType+CoreDataProperties.swift */,
+				23D5A3B01F3A11E400F1B9E9 /* Image+CoreDataProperties.swift */,
+				23D5A3B21F3A11E400F1B9E9 /* Item+CoreDataProperties.swift */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23D5A3B91F3A11E400F1B9E9 /* Item+CoreDataClass.swift in Sources */,
+				23D5A3B81F3A11E400F1B9E9 /* Image+CoreDataProperties.swift in Sources */,
+				23D5A3B51F3A11E400F1B9E9 /* ItemType+CoreDataClass.swift in Sources */,
+				23D5A3B41F3A11E400F1B9E9 /* Store+CoreDataProperties.swift in Sources */,
 				23D5A3991F3A088000F1B9E9 /* ViewController.swift in Sources */,
+				23D5A3B71F3A11E400F1B9E9 /* Image+CoreDataClass.swift in Sources */,
+				23D5A3B31F3A11E400F1B9E9 /* Store+CoreDataClass.swift in Sources */,
 				23D5A3971F3A088000F1B9E9 /* AppDelegate.swift in Sources */,
+				23D5A3B61F3A11E400F1B9E9 /* ItemType+CoreDataProperties.swift in Sources */,
+				23D5A3BA1F3A11E400F1B9E9 /* Item+CoreDataProperties.swift in Sources */,
 				23D5A39F1F3A088000F1B9E9 /* DreamLister.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
