@@ -44,6 +44,52 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bea-a9-6vN" id="9ww-9i-TFg">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Eg-dF-ncz">
+                                                    <rect key="frame" x="8" y="8" width="327" height="134"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L1m-bi-P08">
+                                                            <rect key="frame" x="8" y="17" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="SId-xI-rKl"/>
+                                                                <constraint firstAttribute="height" constant="100" id="qiV-cX-84G"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2Z-vs-tyP">
+                                                            <rect key="frame" x="116" y="8" width="203" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="4AI-8U-VuV"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$80, 000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-PJ-oXw">
+                                                            <rect key="frame" x="116" y="37" width="203" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="jWL-x8-2bu"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="L1m-bi-P08" firstAttribute="centerY" secondItem="3Eg-dF-ncz" secondAttribute="centerY" id="Cwo-cR-mjg"/>
+                                                        <constraint firstItem="m2Z-vs-tyP" firstAttribute="top" secondItem="3Eg-dF-ncz" secondAttribute="top" constant="8" id="QaZ-Wi-Vab"/>
+                                                        <constraint firstItem="L1m-bi-P08" firstAttribute="leading" secondItem="3Eg-dF-ncz" secondAttribute="leading" constant="8" id="j4N-cP-41e"/>
+                                                        <constraint firstItem="m2Z-vs-tyP" firstAttribute="leading" secondItem="L1m-bi-P08" secondAttribute="trailing" constant="8" id="ol7-tP-vo5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="m2Z-vs-tyP" secondAttribute="trailing" constant="8" id="yxc-EU-7Nx"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3Eg-dF-ncz" firstAttribute="top" secondItem="9ww-9i-TFg" secondAttribute="topMargin" id="18V-Jv-pGb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3Eg-dF-ncz" secondAttribute="bottom" id="37z-s0-Icd"/>
+                                                <constraint firstItem="3Eg-dF-ncz" firstAttribute="trailing" secondItem="9ww-9i-TFg" secondAttribute="trailingMargin" id="K4L-NT-Jwv"/>
+                                                <constraint firstItem="3Eg-dF-ncz" firstAttribute="leading" secondItem="9ww-9i-TFg" secondAttribute="leadingMargin" id="t6D-xu-VPT"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.58558584865397878" green="0.76641924080075297" blue="0.89439696976670802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
