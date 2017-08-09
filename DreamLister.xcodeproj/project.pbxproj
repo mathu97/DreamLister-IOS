@@ -23,6 +23,7 @@
 		23D5A3BA1F3A11E400F1B9E9 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3B21F3A11E400F1B9E9 /* Item+CoreDataProperties.swift */; };
 		82501B211F3ABB7A0060E52C /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82501B201F3ABB7A0060E52C /* tesla.jpg */; };
 		82501B241F3ABBDB0060E52C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82501B231F3ABBDB0060E52C /* MaterialView.swift */; };
+		82501B261F3ABE070060E52C /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82501B251F3ABE070060E52C /* itemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		23D5A3B21F3A11E400F1B9E9 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		82501B201F3ABB7A0060E52C /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		82501B231F3ABBDB0060E52C /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		82501B251F3ABE070060E52C /* itemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				82501B231F3ABBDB0060E52C /* MaterialView.swift */,
+				82501B251F3ABE070060E52C /* itemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23D5A3B91F3A11E400F1B9E9 /* Item+CoreDataClass.swift in Sources */,
+				82501B261F3ABE070060E52C /* itemCell.swift in Sources */,
 				23D5A3B81F3A11E400F1B9E9 /* Image+CoreDataProperties.swift in Sources */,
 				23D5A3B51F3A11E400F1B9E9 /* ItemType+CoreDataClass.swift in Sources */,
 				82501B241F3ABBDB0060E52C /* MaterialView.swift in Sources */,
