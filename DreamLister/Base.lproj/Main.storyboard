@@ -112,6 +112,10 @@
                             <color key="tintColor" red="0.43451038981746937" green="0.43451038981746937" blue="0.43451038981746937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="gM8-CX-Gzz" id="9Cb-b1-Yj4"/>
+                        <outlet property="tableView" destination="Scp-XP-gPU" id="26E-fp-fge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
