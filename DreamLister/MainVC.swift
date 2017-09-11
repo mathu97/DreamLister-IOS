@@ -28,7 +28,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! itemCell
+        configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+        return cell
+        
+    }
+    
+    func configureCell(cell: itemCell, indexPath: NSIndexPath) {
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
