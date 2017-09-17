@@ -23,7 +23,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        
+        generateTestData()
+        attemptFetch()
     }
 
     
@@ -69,6 +71,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         fetchRequest.sortDescriptors = [dateSort]
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        self.controller = controller
         
         do {
             try controller.performFetch()
@@ -112,9 +115,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         case.update:
             if let indexPath = indexPath {
                 let cell = tableView.cellForRow(at: indexPath) as! itemCell
-                //update the cell data
-                break
+                configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
             }
+            break
         
         case.move:
             if let indexPath = indexPath {
@@ -127,5 +130,24 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
         
     }
+    
+    func generateTestData () {
+        
+        let item =  Item(context: context)
+        item.title = "MacBook Pro"
+        item.price = 1800
+        item.details = "Need to preorder it!"
+        
+        let item2 =  Item(context: context)
+        item2.title = "Bose QC35"
+        item2.price = 500
+        item2.details = "Amazing headphones!"
+        
+        let item3 =  Item(context: context)
+        item3.title = "Tesla Model S"
+        item3.price = 120000
+        item3.details = "My Dream Car"
+    }
+    
 }
 
