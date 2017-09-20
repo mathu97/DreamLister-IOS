@@ -24,7 +24,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
-        generateTestData()
+        //generateTestData()
         attemptFetch()
     }
 
@@ -147,6 +147,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item3.title = "Tesla Model S"
         item3.price = 120000
         item3.details = "My Dream Car"
+        
+        ad.saveContext()
     }
     
 }
