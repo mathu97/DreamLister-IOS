@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bea-a9-6vN" id="9ww-9i-TFg">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Eg-dF-ncz">
@@ -128,16 +128,99 @@
                     <navigationItem key="navigationItem" title="DreamLister" id="d3s-Fi-Mps">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yvo-zb-swf">
                             <color key="tintColor" red="0.43451038981746937" green="0.43451038981746937" blue="0.43451038981746937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Rf7-qf-Agx" kind="show" identifier="ItemDetailVCNew" id="jt7-Tr-3hg"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="gM8-CX-Gzz" id="9Cb-b1-Yj4"/>
                         <outlet property="tableView" destination="Scp-XP-gPU" id="26E-fp-fge"/>
+                        <segue destination="Rf7-qf-Agx" kind="show" identifier="ItemDetailVC" id="Ptx-Eb-Ksb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1104.8" y="-561.76911544227892"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xgU-d2-qFD">
+            <objects>
+                <viewController id="Rf7-qf-Agx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dTB-Nx-gjJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="MFl-Z4-KKT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zjb-bQ-taj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="TeS-SI-QYL">
+                                <rect key="frame" x="16" y="64" width="100" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YE4-rF-1ks"/>
+                                    <constraint firstAttribute="height" constant="100" id="pGh-o0-fbN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNe-GP-VaU">
+                                <rect key="frame" x="16" y="72" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="k1k-rO-phP"/>
+                                    <constraint firstAttribute="width" constant="100" id="wlv-dM-JzT"/>
+                                </constraints>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NRo-9g-Dze">
+                                <rect key="frame" x="124" y="82" width="235" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bTd-lB-ZKn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HaM-4W-fkO">
+                                <rect key="frame" x="124" y="132" width="235" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="u28-Lh-TZY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1QL-jW-OwA">
+                                <rect key="frame" x="16" y="190" width="343" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9HS-Hm-qYc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JNe-GP-VaU" firstAttribute="leading" secondItem="Zjb-bQ-taj" secondAttribute="leadingMargin" id="15E-Wi-aSu"/>
+                            <constraint firstItem="TeS-SI-QYL" firstAttribute="top" secondItem="dTB-Nx-gjJ" secondAttribute="bottom" id="6qK-9R-lFX"/>
+                            <constraint firstItem="JNe-GP-VaU" firstAttribute="centerX" secondItem="TeS-SI-QYL" secondAttribute="centerX" id="BV6-Wa-9cC"/>
+                            <constraint firstItem="TeS-SI-QYL" firstAttribute="leading" secondItem="Zjb-bQ-taj" secondAttribute="leadingMargin" id="DAL-0M-mcq"/>
+                            <constraint firstItem="NRo-9g-Dze" firstAttribute="leading" secondItem="JNe-GP-VaU" secondAttribute="trailing" constant="8" id="DbT-QY-qYe"/>
+                            <constraint firstItem="1QL-jW-OwA" firstAttribute="top" secondItem="TeS-SI-QYL" secondAttribute="bottom" constant="10" id="JOh-kC-ec6"/>
+                            <constraint firstItem="NRo-9g-Dze" firstAttribute="leading" secondItem="TeS-SI-QYL" secondAttribute="trailing" constant="8" id="MHC-NM-pPs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NRo-9g-Dze" secondAttribute="trailing" id="T8a-Mt-scv"/>
+                            <constraint firstItem="1QL-jW-OwA" firstAttribute="leading" secondItem="Zjb-bQ-taj" secondAttribute="leadingMargin" id="Y36-YN-0YY"/>
+                            <constraint firstItem="JNe-GP-VaU" firstAttribute="top" secondItem="dTB-Nx-gjJ" secondAttribute="bottom" constant="8" id="hIH-mI-FLm"/>
+                            <constraint firstItem="NRo-9g-Dze" firstAttribute="top" secondItem="dTB-Nx-gjJ" secondAttribute="bottom" constant="18" id="rGM-1L-tZf"/>
+                            <constraint firstItem="JNe-GP-VaU" firstAttribute="centerY" secondItem="TeS-SI-QYL" secondAttribute="centerY" id="uT2-hA-7Dx"/>
+                            <constraint firstItem="1QL-jW-OwA" firstAttribute="trailing" secondItem="Zjb-bQ-taj" secondAttribute="trailingMargin" id="vBc-8N-J8o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUR-W8-63S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="-560.86956521739137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39C-ru-U6t">
@@ -163,6 +246,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imagePick" width="300" height="300"/>
         <image name="tesla.jpg" width="628" height="417"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ptx-Eb-Ksb"/>
+    </inferredMetricsTieBreakers>
 </document>
