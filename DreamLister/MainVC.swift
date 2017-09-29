@@ -26,6 +26,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         //generateTestData()
         attemptFetch()
+        
     }
 
     
