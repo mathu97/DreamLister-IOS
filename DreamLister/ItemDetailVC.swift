@@ -8,8 +8,16 @@
 
 import UIKit
 
-class ItemDetailVC: UIViewController {
-
+class ItemDetailVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    @IBOutlet weak var storePicker: UIPickerView!
+    @IBOutlet weak var titleField: CustomTextField!
+    @IBOutlet weak var priceField: CustomTextField!
+    @IBOutlet weak var detailsField: CustomTextField!
+    
+    storePicker.delegate = self
+    storePicker.dataSource = self
+    
+    var stores = [Store]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,9 +28,24 @@ class ItemDetailVC: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        let store = stores[row]
+        return store.name
+        
     }
 
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return stores.count
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //Update when selected
+    }
+    
+    
 }
